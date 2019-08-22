@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Extended_Final_Grade_Calculator_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-GI-i3S">
+                                <rect key="frame" x="15" y="0.0" width="69" height="30"/>
+                                <state key="normal" title="Open App"/>
+                                <connections>
+                                    <action selector="openAppButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="qpC-c2-KUc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqB-uw-sdV">
+                                <rect key="frame" x="241" y="0.0" width="64" height="30"/>
+                                <state key="normal" title="Add Final"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gir-xz-IRp">
+                                <rect key="frame" x="10" y="35" width="300" height="0.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="ZdB-nK-apv"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IzK-74-kDJ">
+                                <rect key="frame" x="0.0" y="40.5" width="320" height="259.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Gir-xz-IRp" firstAttribute="top" secondItem="nqB-uw-sdV" secondAttribute="bottom" constant="5" id="DSz-Y8-nc1"/>
+                            <constraint firstItem="Gir-xz-IRp" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="M7G-ML-kJy"/>
+                            <constraint firstAttribute="trailing" secondItem="Gir-xz-IRp" secondAttribute="trailing" constant="10" id="MCe-U2-eeV"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="IzK-74-kDJ" secondAttribute="bottom" id="RXN-J5-rgL"/>
+                            <constraint firstItem="zSi-GI-i3S" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="Rlj-RQ-XzC"/>
+                            <constraint firstItem="nqB-uw-sdV" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="TJj-Kc-RPw"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="IzK-74-kDJ" secondAttribute="trailing" id="aD7-gN-UBh"/>
+                            <constraint firstItem="IzK-74-kDJ" firstAttribute="top" secondItem="Gir-xz-IRp" secondAttribute="bottom" constant="5" id="bds-SV-PTs"/>
+                            <constraint firstItem="IzK-74-kDJ" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="dhu-BZ-HyU"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="nqB-uw-sdV" secondAttribute="trailing" constant="15" id="qek-ha-7vb"/>
+                            <constraint firstItem="zSi-GI-i3S" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="15" id="zB9-9f-mjz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="tableView" destination="IzK-74-kDJ" id="b7f-3q-GaK"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="96" y="54.872563718140931"/>
+        </scene>
+    </scenes>
+</document>

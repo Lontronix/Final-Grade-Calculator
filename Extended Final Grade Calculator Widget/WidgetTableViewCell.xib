@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="23" id="KGk-i7-Jjw" customClass="WidgetTableViewCell" customModule="Extended_Final_Grade_Calculator_Widget" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Western World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtP-6P-8m6">
+                        <rect key="frame" x="10" y="2" width="114" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/18/18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQ9-GH-yIU">
+                        <rect key="frame" x="10" y="24.5" width="64" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0W-jc-3bi">
+                        <rect key="frame" x="10" y="48" width="55" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89.7%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcS-tT-TXR">
+                        <rect key="frame" x="255" y="24.5" width="49" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nQ9-GH-yIU" firstAttribute="top" secondItem="mtP-6P-8m6" secondAttribute="bottom" constant="1.5" id="1uo-04-eqf"/>
+                    <constraint firstItem="mtP-6P-8m6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Jv8-oL-2pV"/>
+                    <constraint firstItem="mtP-6P-8m6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LfT-TZ-dNS"/>
+                    <constraint firstItem="nQ9-GH-yIU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OIX-RS-eFe"/>
+                    <constraint firstItem="qcS-tT-TXR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Wdq-e6-VE3"/>
+                    <constraint firstAttribute="trailing" secondItem="qcS-tT-TXR" secondAttribute="trailing" constant="16" id="blx-EF-CWc"/>
+                    <constraint firstItem="N0W-jc-3bi" firstAttribute="top" secondItem="nQ9-GH-yIU" secondAttribute="bottom" constant="2.5" id="kbg-bJ-yFO"/>
+                    <constraint firstItem="N0W-jc-3bi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rmJ-zp-MSo"/>
+                    <constraint firstItem="nQ9-GH-yIU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sFz-Qs-CkS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CourseNameLabel" destination="mtP-6P-8m6" id="1Iu-lJ-9ih"/>
+                <outlet property="finalDateLabel" destination="nQ9-GH-yIU" id="Vfp-K7-yeY"/>
+                <outlet property="finalTypeLabel" destination="N0W-jc-3bi" id="Bhf-Vh-Pf2"/>
+                <outlet property="necessaryPercentLabel" destination="qcS-tT-TXR" id="57M-48-EGf"/>
+            </connections>
+            <point key="canvasLocation" x="134" y="83"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="ClassInfoTableViewCell" customModule="Extended_Final_Grade_Calculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="46.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4q-xc-ttO">
+                        <rect key="frame" x="16" y="13" width="113.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Western World" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="k78-9w-bOc">
+                        <rect key="frame" x="144.5" y="0.0" width="160.5" height="46.5"/>
+                        <color key="textColor" red="0.47451448440551758" green="0.47450375556945801" blue="0.47450584173202515" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k78-9w-bOc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BD0-Pe-YC3"/>
+                    <constraint firstItem="b4q-xc-ttO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Flp-8I-p5w"/>
+                    <constraint firstItem="k78-9w-bOc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="K5l-LO-eaS"/>
+                    <constraint firstItem="b4q-xc-ttO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Q37-hf-lm0"/>
+                    <constraint firstItem="k78-9w-bOc" firstAttribute="leading" secondItem="b4q-xc-ttO" secondAttribute="trailing" constant="15" id="flX-5i-xhD"/>
+                    <constraint firstAttribute="bottom" secondItem="k78-9w-bOc" secondAttribute="bottom" id="mfU-lh-aog"/>
+                    <constraint firstAttribute="trailing" secondItem="k78-9w-bOc" secondAttribute="trailing" constant="15" id="yKb-YW-9Je"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="courseNameTextField" destination="k78-9w-bOc" id="ZLa-RT-60O"/>
+            </connections>
+            <point key="canvasLocation" x="145.59999999999999" y="69.715142428785612"/>
+        </tableViewCell>
+    </objects>
+</document>
